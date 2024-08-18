@@ -1,0 +1,685 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Faz com que o container ocupe toda a altura da tela */
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    height: 90vh;          /* Define altura da viewport */
+}
+
+.logo {
+    max-width: 100%; /* Faz com que o logo não ultrapasse o tamanho da tela */
+    height: auto;    /* Mantém a proporção do logo */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/wp1.png'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+
+
+/* Wrapper da ficha */
+.sheet__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Estilo do cabeçalho */
+.sheetHeading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sheetHeading-title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.sheetHeading-subtitle {
+    font-size: 1rem;
+    color: #ffd000;
+}
+
+/* Estilo dos grupos de entrada */
+.inputGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.inputGroup-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ffd000;
+
+}
+
+.inputGroup-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.1);
+    outline: none;
+}
+
+.inputGroup-input.--small {
+    width: 120px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #170745;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do feedback */
+#feedback {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #ffd000;
+    color: #000000;
+    border: 1px solid #ffd000;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    background: #170745;
+    color: #170745;
+    padding: 1rem 0;
+}
+/* styles.css */
+
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+    height: 100%;
+    overflow-x: hidden; /* Para evitar rolagem horizontal */
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(38, 143, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #ffd000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 60px; /* Ajuste conforme a altura da navbar */
+}
+
+.sheet__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhe o conteúdo ao início */
+    padding-bottom: 20px; /* Para garantir espaço no rodapé */
+}
+
+.sheet {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #ffd000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sheetHeading {
+    text-align: center;
+}
+
+.sheetHeading-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sheetHeading-subtitle {
+    font-size: 18px;
+    color: #170745;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+.inputGroup-item {
+    margin-bottom: 10px;
+}
+
+.inputGroup-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inputGroup-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffd000;
+    border-radius: 4px;
+}
+
+.inputGroup-input --small {
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.inputGroup-subgroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #ffd000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
+
+/* styles.css */
+
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+    height: 100%;
+    overflow-x: hidden; /* Para evitar rolagem horizontal */
+}
+
+/* Navbar fixa no topo */
+.navbar {
+    width: 100%;
+    background-color: rgba(38, 143, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Centraliza o conteúdo da navbar */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #ffd000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Conteúdo principal da página */
+.content {
+    padding: 20px;
+    margin-top: 60px; /* Ajuste conforme a altura da navbar */
+}
+
+/* Wrapper da ficha */
+.sheet__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao início */
+    padding-bottom: 20px; /* Espaço no rodapé */
+}
+
+/* Estilo da ficha */
+.sheet {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #ffd000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos do cabeçalho da ficha */
+.sheetHeading {
+    text-align: center;
+}
+
+.sheetHeading-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sheetHeading-subtitle {
+    font-size: 18px;
+    color: #ffd000;
+}
+
+/* Estilos dos grupos de entrada */
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+.inputGroup-item {
+    margin-bottom: 10px;
+}
+
+/* Labels dos inputs */
+.inputGroup-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.inputGroup-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ffd000;
+    border-radius: 4px;
+}
+
+.inputGroup-input --small {
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Subgrupo de inputs */
+.inputGroup-subgroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Botão de submissão */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #ffd000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Feedback escondido */
+.hidden {
+    display: none;
+}
+/* styles.css */
+
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+    height: auto; /* Permite que o conteúdo determine a altura da página */
+    overflow-x: hidden; /* Para evitar rolagem horizontal */
+}
+
+/* Navbar fixa no topo */
+.navbar {
+    width: 100%;
+    background-color: rgba(38, 143, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que a navbar esteja acima do conteúdo */
+    padding: 15px 0;
+}
+
+/* Centraliza o conteúdo da navbar */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos do menu da navbar */
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Cor das letras da navbar */
+.navbar-menu a {
+    text-decoration: none;
+    color: #ffd000; /* Cor das letras da navbar em branco */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Conteúdo principal da página */
+.content {
+    padding-top: 80px; /* Espaçamento no topo para a navbar fixa */
+    margin-top: 0; /* Remove o margin-top adicional */
+}
+
+/* Wrapper da ficha */
+.sheet__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao início */
+    padding-bottom: 20px; /* Espaço no rodapé */
+}
+
+/* Estilo da ficha */
+.sheet {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #170745;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilos do cabeçalho da ficha */
+.sheetHeading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sheetHeading-title {
+    font-size: 28px;
+    margin: 0;
+}
+
+.sheetHeading-subtitle {
+    font-size: 22px;
+    color: #ffd000;
+}
+
+/* Container para os atributos */
+.attributes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os atributos */
+}
+
+/* Estilos dos grupos de atributos */
+.inputGroup {
+    flex: 1 1 calc(20% - 20px); /* Ajusta a largura para cinco colunas */
+    box-sizing: border-box;
+}
+
+/* Ajustes na aparência dos inputs */
+.inputGroup-item {
+    margin-bottom: 30px; /* Espaçamento entre grupos de inputs */
+}
+
+.inputGroup-label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px; /* Tamanho da fonte das labels */
+    margin-bottom: 10px;
+}
+
+.inputGroup-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ffd000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; /* Tamanho da fonte dos inputs */
+}
+
+/* Botão de submissão */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #ffd000;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Feedback escondido */
+.hidden {
+    display: none;
+}
+
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-size: cover; /* Faz com que a imagem cubra toda a área do background */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-attachment: fixed; /* Mantém a imagem fixa na tela */
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+main.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+main.fade.fade-in {
+    opacity: 1;
+}
+
+.content {
+    margin-top: 60px; /* Ajuste com base na altura da navbar */
+    padding: 20px;
+}
+
+.tablink {
+    background-color: #ffd000;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.tablink.active {
+    background-color: #ffd000;
+    color: rgb(0, 0, 0);
+}
+
+.tabcontent {
+    display: none;
+    padding: 15px;
+    border: 1px solid #000000;
+    border-top: none;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+.inputGroup-item {
+    margin-bottom: 10px;
+}
+
+.inputGroup-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputGroup-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #ffd000;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ffd000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* styles.css */
+
+.hidden {
+    display: none;
+}
+
+#feedback {
+    background-color: #a7ce25;
+    color: #ffd000;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CSS para centralizar os botões das abas */
+.tabs {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 20px; /* Espaço abaixo das abas, ajuste conforme necessário */
+}
+
+.tablink {
+    background-color: #ffd000; /* Cor de fundo dos botões */
+    border: 1px solid #ffd000; /* Borda dos botões */
+    border-radius: 5px; /* Arredondar bordas dos botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 0 5px; /* Espaço entre os botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre os botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+}
+
+.tablink.active {
+    background-color: #ffd000; /* Cor de fundo dos botões ativos */
+    border-bottom: 1px solid transparent; /* Remove a borda inferior dos botões ativos */
+}
+
+/* Aplicar a fonte a todo o corpo da página */
+body {
+    font-family: 'MedievalSharp', sans-serif;
+}
+
+/* Aplicar a fonte a um elemento específico, como um título */
+h1, h2, h3 {
+    font-family: 'MedievalSharp', sans-serif;
+    color: white;
+}
+
+/* Estilos adicionais */

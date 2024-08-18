@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="img/icon.png" sizes="128x128" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar-container">
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="atributos.html">Atributos</a></li>
+                <li><a href="pericias.html">Perícias</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="mochila.html">Mochila</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <main>
+            <div class="sheet__wrapper">
+                <div class="sheet">
+                    <header class="sheetHeading">
+                        <h1 class="sheetHeading-subtitle">Atributos</h1>
+                    </header>
+                    <form id="character-form">
+                        <!-- Atributos -->
+                        <div class="attributes-container">
+                            <!-- Agilidade -->
+                            <div class="inputGroup">
+                                <div class="inputGroup-item">
+                                    <label class="inputGroup-label" for="agilidade">Agilidade:</label>
+                                    <input class="inputGroup-input" type="number" id="agilidade" name="agilidade" placeholder="Valor da Agilidade" min="0" value="0">
+                                </div>
+                            </div>
+                            <!-- Aura -->
+                            <div class="inputGroup">
+                                <div class="inputGroup-item">
+                                    <label class="inputGroup-label" for="aura">Aura:</label>
+                                    <input class="inputGroup-input" type="number" id="aura" name="aura" placeholder="Valor da Aura" min="0" value="0">
+                                </div>
+                            </div>
+                            <!-- Força -->
+                            <div class="inputGroup">
+                                <div class="inputGroup-item">
+                                    <label class="inputGroup-label" for="forca">Força:</label>
+                                    <input class="inputGroup-input" type="number" id="forca" name="forca" placeholder="Valor da Força" min="0" value="0">
+                                </div>
+                            </div>
+                            <!-- Resistência -->
+                            <div class="inputGroup">
+                                <div class="inputGroup-item">
+                                    <label class="inputGroup-label" for="resistencia">Resistência:</label>
+                                    <input class="inputGroup-input" type="number" id="resistencia" name="resistencia" placeholder="Valor da Resistência" min="0" value="0">
+                                </div>
+                            </div>
+                            <!-- Sabedoria -->
+                            <div class="inputGroup">
+                                <div class="inputGroup-item">
+                                    <label class="inputGroup-label" for="sabedoria">Sabedoria:</label>
+                                    <input class="inputGroup-input" type="number" id="sabedoria" name="sabedoria" placeholder="Valor da Sabedoria" min="0" value="0">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Salvar Ficha</button>
+                        <div id="feedback" class="hidden">Ficha salva com sucesso!</div>
+                    </form>
+                </div>
+            </div>
+        </main>
+            <main class="fade">
+    </div>
+</body>
+</html>

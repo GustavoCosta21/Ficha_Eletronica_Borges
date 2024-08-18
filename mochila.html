@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochila</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="img/icon.png" sizes="128x128" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar-container">
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="atributos.html">Atributos</a></li>
+                <li><a href="pericias.html">Perícias</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="mochila.html">Mochila</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <main>
+            <div class="sheet__wrapper">
+                <div class="sheet">
+                    <header class="sheetHeading">
+                        <h1 class="sheetHeading-subtitle">Mochila</h1>
+                    </header>
+                    <form id="backpack-form">
+                        <div class="inputGroup">
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="descricao_item"></label>
+                                <textarea class="inputGroup-input" id="descricao_item" name="descricao_item" placeholder="Descrição"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Salvar Item</button>
+                        <div id="feedback" class="hidden">Item salvo com sucesso!</div>
+                    </form>
+                </div>
+            </div>
+             <main class="fade">
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perícias</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="img/icon.png" sizes="128x128" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'MedievalSharp', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        .sheetHeading-subtitle {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .attributes-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .inputGroup {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+
+        .inputGroup-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputGroup-label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+
+        }
+
+        .description {
+            font-style: italic;
+            color: #ffd000;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar-container">
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="atributos.html">Atributos</a></li>
+                <li><a href="pericias.html">Perícias</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="mochila.html">Mochila</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <main>
+            <div class="sheet__wrapper">
+                <div class="sheet">
+                    <header class="sheetHeading">
+                        <h1 class="sheetHeading-subtitle">Perícias</h1>
+                    </header>
+                    <form id="character-form">
+                        <!-- Atributos -->
+                        <div class="attributes-container">
+                            <!-- Agilidade -->
+                            <div class="inputGroup">
+                                <label class="inputGroup-label" for="agilidade-desc1">Agilidade</label>
+                                <input class="inputGroup-input" type="text" id="agilidade-desc1" name="agilidade-desc1" placeholder="Destreza">
+                                <input class="inputGroup-input" type="text" id="agilidade-desc2" name="agilidade-desc2" placeholder="Furtividade">
+                                <div class="description">Destreza e Furtividade</div>
+                            </div>
+                            <!-- Aura -->
+                            <div class="inputGroup">
+                                <label class="inputGroup-label" for="aura-desc1">Aura</label>
+                                <input class="inputGroup-input" type="text" id="aura-desc1" name="aura-desc1" placeholder="Adestramento">
+                                <input class="inputGroup-input" type="text" id="aura-desc2" name="aura-desc2" placeholder="Feitiçaria">
+                                <input class="inputGroup-input" type="text" id="aura-desc3" name="aura-desc3" placeholder="Lábia">
+                                <div class="description">Adestramento, Feitiçaria e Lábia</div>
+                            </div>
+                            <!-- Força -->
+                            <div class="inputGroup">
+                                <label class="inputGroup-label" for="forca-desc1">Força</label>
+                                <input class="inputGroup-input" type="text" id="forca-desc1" name="forca-desc1" placeholder="Atletismo">
+                                <input class="inputGroup-input" type="text" id="forca-desc2" name="forca-desc2" placeholder="Combate">
+                                <div class="description">Atletismo e Combate</div>
+                            </div>
+                            <!-- Resistência -->
+                            <div class="inputGroup">
+                                <label class="inputGroup-label" for="resistencia-desc1">Resistência</label>
+                                <input class="inputGroup-input" type="text" id="resistencia-desc1" name="resistencia-desc1" placeholder="Adaptabilidade">
+                                <input class="inputGroup-input" type="text" id="resistencia-desc2" name="resistencia-desc2" placeholder="Vigor">
+                                <div class="description">Adaptabilidade e Vigor</div>
+                            </div>
+                            <!-- Sabedoria -->
+                            <div class="inputGroup">
+                                <label class="inputGroup-label" for="sabedoria-desc1">Sabedoria</label>
+                                <input class="inputGroup-input" type="text" id="sabedoria-desc1" name="sabedoria-desc1" placeholder="Fabricação">
+                                <input class="inputGroup-input" type="text" id="sabedoria-desc2" name="sabedoria-desc2" placeholder="Percepção">
+                                <input class="inputGroup-input" type="text" id="sabedoria-desc3" name="sabedoria-desc3" placeholder="Sobrevivência">
+                                <div class="description">Fabricação, Percepção e Sobrevivência</div>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Salvar Ficha</button>
+                        <div id="feedback" class="hidden">Ficha salva com sucesso!</div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

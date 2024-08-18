@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="img/icon.png" sizes="128x128" type="image/x-icon">
+    <title>Informações</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav class="navbar-container">
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="atributos.html">Atributos</a></li>
+                <li><a href="pericias.html">Perícias</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="mochila.html">Mochila</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="content">
+        <main>
+            <div class="sheet__wrapper">
+                <div class="sheet">
+                    <header class="sheetHeading">
+                        <h1 class="sheetHeading-subtitle">Informações</h1>
+                    </header>
+                    <form id="ficha-form">
+                        <div class="inputGroup">
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="nome">Nome:</label>
+                                <input class="inputGroup-input" id="nome" name="nome" type="text" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="raca">Raça:</label>
+                                <input class="inputGroup-input" id="raca" name="raca" type="text" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="classe">Classe:</label>
+                                <input class="inputGroup-input" id="classe" name="classe" type="text" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="vida-atual">Vida Atual:</label>
+                                <input class="inputGroup-input" id="vida-atual" name="vida-atual" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="vida-maxima">Vida Máxima:</label>
+                                <input class="inputGroup-input" id="vida-maxima" name="vida-maxima" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="dfd">N.E.N.:</label>
+                                <input class="inputGroup-input" id="dfd" name="dfd" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="mana-atual">Pontos de Mana Atual:</label>
+                                <input class="inputGroup-input" id="mana-atual" name="mana-atual" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="mana-maxima">Pontos de Mana Máxima:</label>
+                                <input class="inputGroup-input" id="mana-maxima" name="mana-maxima" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="defesa">Defesa:</label>
+                                <input class="inputGroup-input" id="defesa" name="defesa" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="sanidade-atual">Sanidade Atual:</label>
+                                <input class="inputGroup-input" id="sanidade-atual" name="sanidade-atual" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="sanidade-maxima">Sanidade Máxima:</label>
+                                <input class="inputGroup-input" id="sanidade-maxima" name="sanidade-maxima" type="number" min="0" required>
+                            </div>
+                            <div class="inputGroup-item">
+                                <label class="inputGroup-label" for="deslocamento">Deslocamento:</label>
+                                <input class="inputGroup-input" id="deslocamento" name="deslocamento" type="number" min="0" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Salvar</button>
+                        <div id="feedback" class="hidden">Ficha salva com sucesso!</div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
